@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# 🚀 TalentSwipe
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native Expo recruitment app inspired by Tinder swiping experience.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 About the App
 
-   ```bash
-   npm install
-   ```
+TalentSwipe is a recruitment platform with swipe-based interaction where users can:
 
-2. Start the app
+- Swipe job offers (like/dislike)
+- View job details
+- Upload a Video CV
+- Chat with recruiters after a match
+- Manage profiles based on roles
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 👥 User Roles
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 👤 Candidate (User)
+- 🧑‍💼 Recruiter
+- 🏢 Company
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Each role has its own dedicated interface and navigation.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## ⚙️ Tech Stack
 
-```bash
-npm run reset-project
-```
+- React Native (Expo SDK 54)
+- Expo Router v6 (File-based routing)
+- TypeScript
+- AsyncStorage (local persistence)
+- Expo Image Picker (Video CV)
+- React Native Safe Area Context
+- Ionicons (@expo/vector-icons)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🎨 Design System
 
-To learn more about developing your project with Expo, look at the following resources:
+- Background: `#08070f`
+- Cards: `#0d0c1a`
+- Borders: `#1a1929`
+- Primary Violet: `#5b4fff`
+- Success Green: `#1D9E75`
+- Error Red: `#ef4444`
+- Warning Amber: `#f59e0b`
+- Border Radius: `12px`
+- Dark Theme Only
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📂 Project Structure
 
-Join our community of developers creating universal apps.
+- Onboarding flow
+- Authentication (Login / Signup)
+- Role-based navigation
+- Swipe system (Tinder-like cards)
+- Job details screen
+- Video CV upload
+- Matches system
+- Chat system (AsyncStorage based)
+- Recruiter dashboard
+- Company management panel
+- Settings & Profile
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 🔐 Data Storage
+
+All data is stored locally using AsyncStorage:
+
+- ONBOARDING_DONE
+- SESSION_USER
+- USERS_KEY
+- CHAT_USER_{id}
+
+---
+
+## 🚀 Features
+
+- Swipe-based job discovery
+- Role-based app experience
+- Video CV upload system
+- Local authentication system
+- Persistent sessions
+- Recruiter candidate management
+- Company job posting system
+- Dark UI optimized for mobile
+
+---
+
+## 🧪 Status
+
+This project is a **final year academic prototype (PFA)** developed for demonstration purposes.
+
+---
+
+## 👨‍💻 Author
+
+- Student: Sahar
+- Project: TalentSwipe
+- Year: 2026
+
+---
+
+## 📌 Note
+
+No backend is used. Everything runs locally using AsyncStorage.
